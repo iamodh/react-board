@@ -1,5 +1,10 @@
+import { RouterProvider } from "react-router-dom";
+import router from "./routes";
+
 function App() {
-  return <h1 className="text-cyan-500">App</h1>;
+  return (
+    <RouterProvider router={router} future={{ v7_startTransition: true }} />
+  );
 }
 
 export default App;
