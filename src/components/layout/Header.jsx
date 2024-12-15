@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header className="flex justify-between items-center p-4">
@@ -7,15 +9,15 @@ export default function Header() {
         </a>
       </div>
       <nav className="flex gap-6 w-1/3 justify-center">
-        <a href="#">
+        <Link to="/info">
           <span>정보공유</span>
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="/free">
           <span>자유게시판</span>
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="/brunch">
           <span>브런치스토리</span>
-        </a>
+        </Link>
       </nav>
       <div className="flex w-1/3 justify-end items-center gap-3 *:px-2 *:rounded-sm *:text-sm *:h-8 *:leading-8">
         <button className="bg-orange-400 text-white">로그인</button>
