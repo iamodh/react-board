@@ -20,7 +20,9 @@ export default function Header() {
         </Link>
       </nav>
       <div className="flex w-1/3 justify-end items-center gap-3 *:px-2 *:rounded-sm *:text-sm *:h-8 *:leading-8">
-        <button className="bg-orange-400 text-white">로그인</button>
+        <Link to="/users/login" className="bg-orange-400 text-white">
+          로그인
+        </Link>
         <button className="bg-orange-200">회원가입</button>
         <button className="bg-slate-200 size-7">
           <img src="moon.svg" />
